@@ -9,12 +9,12 @@ export default (props) => {
 		fetchCollection,
 	} = useShopify()
 
-	const collectionID = 'Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MTAxNTA0NDE3Nw==';
+	const collectionID = process.env.REACT_APP_ARCHIVE_COLLECTION_ID
 	useEffect(() => {
-		if (archive.status != 'fulfilled'){
+		if (archive.status !== 'fulfilled'){
 			fetchCollection('archive', collectionID)
 		}
-	}, ['archive', collectionID])
+	}, [collectionID])
 
 	const featured = archive.data	
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import React, { useEffect } from "react"
 import { useShopify, useUX } from "../hooks"
 
 export default (props) => {
@@ -12,7 +12,6 @@ export default (props) => {
 	} = useUX()
 
 	const id = props.id
-	const description = product.description && product.description.split(".")
 
 	function addItemsToTray(product){
 		console.log('adding to tray', product)
@@ -21,7 +20,7 @@ export default (props) => {
 
 	useEffect(() => {
 		fetchProduct(id)
-	}, [id])
+	}, [id, fetchProduct])
 
 	return (
 		<div id="individualProduct">

@@ -1,34 +1,29 @@
 import React, { useEffect, useState } from "react"
-import ProductPoster from "./ProductPoster"
-import ProductView from "./ProductView"
 import "./Products.scss"
 import "./Loop.scss"
-import { useUX, useShopify, } from "../hooks"
+import { useShopify } from "../hooks"
 
 export default (props) => {
 
 	const {
-		product,
 		collection,
 		fetchCollection,
-		fetchProduct,
 		openCart,
 		checkoutState,
 		addVariant,
 	} = useShopify()
 
-	const id = props.match.params.productId
-	const collectionID = 'Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MDgyOTYxMDA2NQ==';
+	const collectionID = process.env.REACT_APP_COLLECTION_COLLECTION_ID
+
 	useEffect(() => {
-		if (collection.status != 'fulfilled'){
+		if (collection.status !== 'fulfilled'){
 			fetchCollection('collection', collectionID)
 		}
-	}, ['collection', collectionID])
+	}, [collectionID])
 	
 
-	// const defaultSize = product.variants && product.variants[0].id.toString()
-	const [size, setSize] = useState("")
-	const [quantity, setQuantity] = useState(1)
+	const [size] = useState("")
+	const [quantity] = useState(1)
 	const featured = collection.data
 	
 	function changeSize(sizeId, quantity, product) {

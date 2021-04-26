@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Redirect } from "react-router-dom"
 import CustomProducts from "./Custom2"
 import CollectionProducts from "./CollectionProducts"
 import Cart from "./Cart"
-import Tray from "./Tray"
 import Contact from "./Contact"
 import Header from "./Header"
 import Archive from "./Archive"
@@ -15,14 +14,12 @@ export default (props) => {
 		createShop,
 		createCheckout,
 		fetchProducts,
-		// fetchCollection,
 	} = useShopify()
 
 	useEffect(() => {
 		createShop()
 		fetchProducts()
 		createCheckout()
-		// fetchCollection()
 	}, [])
 
 	// let path = props

@@ -19,9 +19,9 @@ export default (props) => {
 	} = useShopify()
 
 	const id = props.match.params.productId
-	const collectionID = 'Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MDgyOTU3NzI5Nw==';
+	const collectionID = process.env.REACT_APP_COLLECTION_CUSTOM_ID;
 	useEffect(() => {
-		if (custom.status != 'fulfilled'){
+		if (custom.status !== 'fulfilled'){
 			fetchCollection('custom', collectionID)
 		}
 	}, ['custom', collectionID])

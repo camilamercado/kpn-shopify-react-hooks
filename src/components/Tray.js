@@ -1,12 +1,9 @@
 import React, { useState } from "react"
 import { useUX, useShopify } from "../hooks"
 import "./Cart.scss"
-import LineItem from "./LineItem"
 
 export default (props) => {
 	const {
-		cartStatus,
-		closeCart,
 		openCart,
 		checkoutState,
 		addVariant,
@@ -35,21 +32,11 @@ export default (props) => {
 		let lineItemsToAdd = trayItems.map(lineItem => objectFormat(lineItem.variants[0].id))
 		const checkoutId = checkoutState.id
 		addVariant(checkoutId, lineItemsToAdd)
-		if (formText != ""){
+		if (formText !== ""){
 			updateCheckoutAttributes(formText)
 		}
 		openCart()
   }
-
-	function handleOpen(e) {
-		e.preventDefault()
-		openCart()
-	}
-
-	function handleClose(e) {
-		e.preventDefault()
-		closeCart()
-	}
 
 	function removeItemsFromTray(e, lineItem, i){
 		console.log('index no', lineItem)

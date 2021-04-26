@@ -1,29 +1,18 @@
 import React, {useState} from "react"
-import { useUX, useShopify } from "../hooks"
+import { useShopify } from "../hooks"
 
 export default (props) => {
-	// const { featured, fetchProduct, addVariant } = useShopify()
 	const {
 		featured,
 		product,
-		fetchProduct,
 		openCart,
 		checkoutState,
 		addVariant,
 	} = useShopify()
-	// function handleClick(e, product_id) {
-	// 	e.preventDefault()
-	// 	openLoop()
-	// 	const id = product_id
-	// 	fetchProduct(id).then((res) => {
-	// 		props.history.push(`/Custom/${res.id}`)
-	// 	})
-	// }
-
-	const id = props.id
+	
 	const defaultSize = product.variants && product.variants[0].id.toString()
-	const [size, setSize] = useState("")
-	const [quantity, setQuantity] = useState(1)
+	const [size] = useState("")
+	const [quantity] = useState(1)
 
 	const description = product.description && product.description.split(".")
 

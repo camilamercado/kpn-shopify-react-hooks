@@ -4,33 +4,10 @@ import { NavLink } from "react-router-dom"
 import "./Home.scss"
 
 export default (props) => {
-	const { shopDetails, toggleCart } = useShopify()
+	const { toggleCart } = useShopify()
 	const { MenuState, toggleMenu, closeMenu } = useUX()
 	let path = props.location.pathname.replace(/\//g, '')
-	console.log(path)
-	//closeMenu()
 	return (
-
-		// <header className="App__header">
-		// 	<NavLink className="Header__Link" to={"/Home"} activeClassName="active">
-		// 		{shopDetails.name}
-		// 	</NavLink>
-		// 	<NavLink className="Header__Link" to={"/Custom"} activeClassName="active">
-		// 		Custom Commissions
-		// 	</NavLink>
-		// 	<NavLink className="Header__Link" to={"/Collection"} activeClassName="active">
-		// 		Collection
-		// 	</NavLink>
-		// 	<NavLink className="Header__Link" to={"/Archive"} activeClassName="active">
-		// 		Archive
-		// 	</NavLink>
-		// 	<NavLink className="Header__Link" to={"/Home"} activeClassName="active">
-		// 		CONTACT
-		// 	</NavLink>
-		// 	<button
-		// 		onClick={(e) => toggleCart()}>CART
-		// 	</button>
-		// </header>
 		<header className="App__header" id={path}>
 			<button
 				className="menu-toggle material-icons-round"

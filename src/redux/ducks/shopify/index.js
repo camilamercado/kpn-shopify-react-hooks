@@ -1,11 +1,9 @@
 import { useSelector, useDispatch } from "react-redux"
 import Client from "shopify-buy"
 
-// Creates the client with Shopify-Buy and store info
-//
 const client = Client.buildClient({
-	storefrontAccessToken: "a9f0a10433576d456b60d6de9d75a7af",
-    domain: "shop-redux.myshopify.com",
+	storefrontAccessToken: process.env.REACT_APP_STOREFRONT_ACCESS_TOKEN,
+  domain: process.env.REACT_APP_STOREFRONT_DOMAIN,
 })
 
 const PRODUCTS_FOUND = "shopify/PRODUCTS_FOUND"

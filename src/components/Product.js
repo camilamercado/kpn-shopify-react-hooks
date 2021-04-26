@@ -4,7 +4,6 @@ import { useUX, useShopify } from "../hooks"
 export default (props) => {
 	const { custom, fetchProduct } = useShopify()
 	const {
-		LoopState,
 		openLoop,
 		addToTray
 	} = useUX()

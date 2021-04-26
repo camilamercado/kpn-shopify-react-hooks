@@ -22,10 +22,10 @@ export default (props) => {
 	const id = props.match.params.productId
 	const collectionID = 'Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI2MDgyOTU3NzI5Nw==';
 	useEffect(() => {
-		if (custom.status != 'fulfilled'){
+		if (custom.status !== 'fulfilled'){
 			fetchCollection('custom', collectionID)
 		}
-	}, ['custom', collectionID])
+	}, [collectionID])
 
 	function handleClose(e) {
 		e.preventDefault()
