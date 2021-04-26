@@ -1,0 +1,72 @@
+@import '../globals.scss';
+
+
+.Object__Image,
+.Object__Text {
+  z-index: 10;
+  padding: 20px;
+}
+.Object__Image {
+  border: 1px solid $grey;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 3;
+  margin: 20px 20px 0px 0px;
+  border-radius: 218px 218px 218px 0px;
+  &.Open__false {
+    grid-row: 1 / span 4;
+  }
+  .instructions {
+    font-size: 15px;
+    text-align: center;
+    // font-family: 'Nova Script', cursive;
+  }
+  @media only screen and (max-width: 850px){
+    display: none;
+  } 
+}
+.Object__Text {
+  border: 1px solid $grey;
+  grid-column: 1 / span 4;
+  grid-row: 4 / span 2;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 0px 218px 218px 100px;
+  display: block;
+  &.Open__false {
+    grid-row: 5 / span 1;
+    grid-column: 1 / span 2;
+  }
+  @media only screen and (max-width: 850px){
+    display: none;
+  } 
+}
+
+.Object__Image.Open__true {
+  background: $lemon;
+  figure {
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+    img {
+      margin: auto;
+      &:nth-of-type(2){
+        display: none;
+      }
+    }
+  }
+  .instructions {
+    display: none;
+  }
+}
+
+.Object__Text.Open__true {
+  background: $lemon;
+}
+
+.Object__Image.Open__false {
+  figure { display: none;}
+}
+
+.Object__Text.Open__false {
+  > * { display: none; }
+}

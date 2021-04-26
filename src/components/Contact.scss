@@ -1,0 +1,36 @@
+@import '../globals.scss';
+
+#Contact {
+  grid-column: 1 / span 12;
+  grid-row: 2 / span 3;
+  overflow: scroll;
+  display: grid;
+  grid-template-columns: $desktop-columns-10;
+  @media only screen and (max-width: 850px){
+    grid-row: 3 / span 2;
+  }
+  figure {
+    margin: 0 auto;
+    grid-column: 1 / span 5;
+    grid-row: 3/ span 1;
+  }
+  .Contact__details {
+    grid-column: 6 / span 5;
+    grid-row: 3/ span 1;
+    padding: 20px;
+    * {
+      font-size: 20px;
+      color: $tomato;
+      opacity: 1;
+    }
+    h2 {
+      font-size: 24px;
+      font-size: 64px;
+      line-height: 64px;
+      margin-bottom: 0;
+    }
+  }
+  @media only screen and (max-width: 850px){
+    display: inline;
+  }
+}
