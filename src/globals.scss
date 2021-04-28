@@ -10,11 +10,29 @@ $seafoam: #c4e4d8;
 
 $desktop-columns-10: repeat(10, 1fr);
 
+@font-face {
+  font-family: 'Apple Chancery';
+  src: url(assets/fonts/Apple-Chancery.eot); /* IE9 Compat Modes */
+  src: url(assets/fonts/Apple-Chancery.ttf) format('truetype'),
+       url(assets/fonts/Apple-Chancery.woff2) format('woff2'), /* Pretty Modern Browsers */
+       url(assets/fonts/Apple-Chancery.woff) format('woff'); /* Pretty Modern Browsers */
+
+}
+
 @mixin cursive {
-  font-family: Apple Chancery, cursive;
+  font-family: 'Apple Chancery', Apple Chancery, cursive;
   font-weight: normal;
 }
 
+@font-face {
+  font-family: 'Andale Mono';
+  src: url(assets/fonts/Andale-Mono.ttf) format('truetype'),
+       url(assets/fonts/Andale-Mono.otf) format('opentype'),
+       url(assets/fonts/Andale-Mono.eot), /* IE9 Compat Modes */
+       url(assets/fonts/Andale-Mono.woff) format('woff'), /* Pretty Modern Browsers */
+       url(assets/fonts/Andale-Mono.svg#Andale-Mono) format('svg'); /* Legacy iOS */
+}
+
 @mixin mono {
-  font-family: Andale Mono, Courier New, monospace;
+  font-family: 'Andale Mono', Andale Mono, Courier New, monospace;
 }
