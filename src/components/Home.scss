@@ -31,7 +31,8 @@ header.App__header:not(#Home)  {
     text-decoration: none;
   }
   h2 {
-    font-family: 'Andale Mono', Courier, monospace;
+    // font-family: 'Andale Mono', Courier, monospace;
+    @include mono;
     @media only screen and (max-width: 850px){
       font-size: 10px;
     }
@@ -98,65 +99,6 @@ header.App__header:not(#Home) {
   }
 }
 
-// .App__header {
-//   grid-column: 2/ span 10;
-//   grid-row: 2/span 2;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr 1fr 1fr;
-//   grid-template-rows: 1fr 1fr 1fr 1fr;
-//   padding: 0;
-//   list-style-type: none;
-//   grid-gap: 3px;
-//   * {
-//     text-transform: uppercase;
-//     font-size: 20px;
-//     text-decoration: none;
-//   }
-//   .Header__Link {
-//     border: 1px solid $grey;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     &:hover {
-//       background: $seafoam;
-//     }
-//   }
-//   .Header__Link:nth-of-type(1){
-//     grid-column: 2/ span 2;
-//     grid-row: 2/ span 2;
-//     border-radius: 50%;
-//     z-index: 1;
-//     border: 0px;
-//     background: #f1efef94;
-//     text-align: center;
-//       font-size: 30px;
-//       font-family: 'Nova Script', cursive;  
-//   }
-//   .Header__Link:nth-of-type(2){
-//     grid-column: 1/ span 2;
-//     grid-row: 1/ span 2;
-//     border-radius: 50% 50% 0px;
-//   }
-//   .Header__Link:nth-of-type(3){
-//     grid-column: 3/ span 2;
-//     grid-row: 1/ span 2;
-//     border-radius: 50% 50% 50% 0px;
-//     text-align: right;
-//   }
-//   .Header__Link:nth-of-type(4){
-//     grid-column: 1/ span 2;
-//     grid-row: 3/ span 2;
-//     border-radius: 50%;
-//     border-radius: 50% 0px 50% 50%;
-//   }
-//   .Header__Link:nth-of-type(5){
-//     grid-column: 3/ span 2;
-//     grid-row: 3/ span 2;
-//     border-radius: 50%;
-//     border-radius: 0px 50% 50% 50%;
-//   }
-// }
-
 @keyframes borderbugout {
   from {
     border: 10px solid pink;
@@ -208,7 +150,8 @@ header.App__header#Home {
       border: 1px solid rgba(255, 17, 0, 0.44);
       border-radius: 50%;
       padding: 10px;
-      font-family: 'Andale Mono', Courier, monospace;
+      // font-family: 'Andale Mono', Courier, monospace;
+      @include mono;
     }
     div {
       background: radial-gradient(rgba(0, 195, 255, 0.577) 20%, rgba(255, 176, 176, 0.386) 80%);
@@ -233,7 +176,8 @@ header.App__header#Home {
     border: 1px solid $seafoam;
     position: relative;
     h2 {
-      font-family: cursive;
+      // font-family: cursive;
+      @include cursive;
       text-align: center;
       text-transform: capitalize;
       font-size: 11vw;

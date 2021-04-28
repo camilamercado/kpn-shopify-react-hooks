@@ -9,3 +9,12 @@ $seafoam: #C6FAC8;
 $seafoam: #c4e4d8;
 
 $desktop-columns-10: repeat(10, 1fr);
+
+@include cursive {
+  font-family: Apple Chancery, cursive;
+  font-weight: normal;
+}
+
+@include mono {
+  font-family: Andale Mono, Courier New, monospace;
+}

@@ -185,7 +185,6 @@
     flex: 0 0 auto;
     display: inline-block;
     text-align: center;
-    // font-family: 'Nova Script', cursive;
     h2 {
       font-size: 15px;
     }
@@ -267,9 +266,6 @@
       display: flex;
       flex-direction: column;
       padding: 20px 0 0 0;
-      * {
-        // font-family: 'Nova Script', cursive;
-      }
       label {
         text-align: center;
         font-size: 15px;

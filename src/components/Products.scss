@@ -121,7 +121,8 @@ h2, button {
         display: block;
         text-align: center;
         .Product__title {
-          font-family: 'Andale Mono';
+          // font-family: 'Andale Mono';
+          @include mono;
           opacity: 1;
           margin-bottom: 10px;
           text-shadow: none;
@@ -186,7 +187,6 @@ h2, button {
         font-size: 15px;
       }
       button {
-        // font-family: 'Nova Script', cursive;
         background: transparent;
         border: 1px solid $tomato;
         border-radius: 10px;
@@ -208,7 +208,8 @@ h2, button {
         display: inline-block;
         margin: 10px 20px 10px 0;
         font-size: 30px;
-        font-family: 'Andale Mono';
+        // font-family: 'Andale Mono';
+        @include mono;
         @media only screen and (max-width: 850px){
           font-size: 15px;
           line-height: 18px;
