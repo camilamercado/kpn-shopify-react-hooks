@@ -14,6 +14,9 @@ header.App__header:not(#Home)  {
   background: $seafoam;
   @media only screen and (max-width: 850px){
     grid-row: 1 / span 2;
+    position: fixed;
+    height: 50px;
+    z-index: 10;
   }
   button {
     padding: 0px;
@@ -82,8 +85,8 @@ header.App__header:not(#Home) {
         padding-bottom: 30px;
         a { 
           font-size: 30px!important; 
-          color: #ff506a;
-          text-shadow: 1px 0px 14px #ff506a;
+          color: $grey2;
+          text-shadow: 1px 0px 14px $grey1;
           &.active {
             color: blueviolet;
             text-shadow: 1px 0px 14px blueviolet;
@@ -148,6 +151,8 @@ header.App__header#Home {
       font-size: 26px;
       color: rgba(255, 17, 0, 0.44);
       border: 1px solid rgba(255, 17, 0, 0.44);
+      color: $grey2;
+      border: 1px solid $grey2;
       border-radius: 50%;
       padding: 10px;
       // font-family: 'Andale Mono', Courier, monospace;

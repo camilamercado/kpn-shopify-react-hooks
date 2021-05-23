@@ -9,8 +9,17 @@
     background: $seafoam;
     z-index: 12;
     @media only screen and (max-width: 850px){
-      grid-column: 1 / span 12;
-      grid-row: 3 / span 2;
+      width: 100%;
+      height: calc(100vh - 50px);
+      position: absolute;
+      top: 50px;
+      left: 0px;
+      // background: #e2e2e2;
+      // background: #c4e4d8;
+      // list-style-type: none;
+      // padding-left: 20px;
+      // padding-top: 20px;
+      z-index: 20;
     }
   }	
 
@@ -33,6 +42,7 @@
     @media only screen and (max-width: 850px){
       position: fixed;
       bottom: 0px;
+      top: unset;
       height: 100px;
       width: 100%;
       background: pink;

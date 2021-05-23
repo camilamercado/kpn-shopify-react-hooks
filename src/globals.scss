@@ -1,12 +1,40 @@
+@import './assets/fonts/DJR-Fonts-2021-05-13-e339905-Testing/Roslindale_Web/rosindale-fonts.scss';
+
 @import url('https://fonts.googleapis.com/css2?family=Nova+Script&display=swap');
 $grey: #9A9A9A;
 $grey: #ffffff;
-$grey2: #ff506a;
+$grey2: #ff1b2a5f;
+$grey1: #ff1111fc;
+$grey2: #ff0228a5;
 
 $tomato: #f56053;
+$lightgrey: #e9e2f2;
 $lemon: #F5FF7F;
 $seafoam: #C6FAC8;
-$seafoam: #c4e4d8;
+
+$seafoam: #c6fac800;
+
+// ALT 1
+
+// $lightgrey: #ceb2f2;
+// $lemon: #5427dc;
+// $grey1: #000000a7;
+// $grey2: #000000ad;
+// $grey: #000000ad;
+// $seafoam: transparent;
+
+// ALT 2 
+
+$grey1: #ff1111fc;
+$grey2: #000000c4;
+
+$tomato: #f56053;
+$lightgrey: #e9e2f2;
+$lemon: #F5FF7F;
+$seafoam: #C6FAC8;
+
+$seafoam: #c6fac800;
+
 
 $desktop-columns-10: repeat(10, 1fr);
 
@@ -19,11 +47,6 @@ $desktop-columns-10: repeat(10, 1fr);
 
 }
 
-@mixin cursive {
-  font-family: 'Apple Chancery', Apple Chancery, cursive;
-  font-weight: normal;
-}
-
 @font-face {
   font-family: 'Andale Mono';
   src: url(assets/fonts/Andale-Mono.ttf) format('truetype'),
@@ -33,6 +56,47 @@ $desktop-columns-10: repeat(10, 1fr);
        url(assets/fonts/Andale-Mono.svg#Andale-Mono) format('svg'); /* Legacy iOS */
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+@import url("https://use.typekit.net/maf7xzg.css");
+
+
+@mixin cursive {
+  font-family: 'Apple Chancery', Apple Chancery, cursive;
+  font-family: 'Viaoda Libre', cursive;
+  font-weight: normal;
+  text-transform: initial;
+  // font-family: 'Roslindale Display Narrow', cursive;
+  // font-family: 'Roslindale Display Condensed Extra Light', cursive;
+  // font-weight: 200;
+  font-weight: 300;
+  // letter-spacing: 10px;
+  // text-transform: uppercase!important;
+  // font-style: italic;
+}
+
+@mixin viaoda {
+  font-family: 'Viaoda Libre', cursive;
+}
+
 @mixin mono {
   font-family: 'Andale Mono', Andale Mono, Courier New, monospace;
+  text-transform: uppercase;
+  // font-size: 0px;
+  // font-family: 'Lucida Console', Lucida Console, Courier New, monospace;
+  //font-family: 'Viaoda Libre', cursive;
 }
+
+@mixin mono {
+  font-family: ocr-b-std, monospace;
+  // font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: unset;
+}
+
+// @mixin mono {
+//   font-family: ocr-b-std, monospace;
+//   // font-weight: 400;
+//   font-style: normal;
+//   text-transform: uppercase;
+// }

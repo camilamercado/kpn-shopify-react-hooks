@@ -1,7 +1,7 @@
 @import '../globals.scss';
 
 h2, button {
-  text-shadow: 1px 0px 14px #ff5a5a
+  text-shadow: 1px 0px 14px $grey1;
 }
 
 .custom-products-page {
@@ -35,7 +35,7 @@ h2, button {
       font-size: 85px;
       line-height: 75px;
       width: 100%;
-      margin: 0px;
+      margin: 20px;
       margin-bottom: 40px;
       @media only screen and (max-width: 850px){
         font-size: 17vw;
@@ -357,7 +357,7 @@ h2, button {
       // text-transform: uppercase;
       * {
         font-size: 20px;
-        color: $tomato;
+        color: $grey2;
         opacity: 1;
       }
       h2.Product__title {
@@ -372,7 +372,7 @@ h2, button {
         margin-top: 20px;
         padding: 8px 10px;
         background: transparent;
-        border: 1px solid $tomato;
+        border: 1px solid $grey2;
         border-radius: 10px;
       }
       .Product__description {

@@ -25,6 +25,7 @@ body {
 	// font-family: Helvetica, sans-serif;
 	@include mono;
 	font-weight: 400;
+ 	// background: linear-gradient(180deg, #e9e2f2 0%, rgba(255, 255, 255, 0) 100%), $lemon;
 }
 
 img {
@@ -60,13 +61,13 @@ button {
 #App {
  height: 100vh;
  display: grid;
-//  overflow: scroll;
  grid-template-columns: 20px repeat(10, 1fr) 20px;
  grid-template-rows: 30px 20px 1fr 30px;
-//  background: linear-gradient(180deg, #D6D0DD 0%, rgba(255, 255, 255, 0) 100%), $lemon;
- background: linear-gradient(180deg, #e9e2f2 0%, rgba(255, 255, 255, 0) 100%), $lemon;
+ background: linear-gradient(180deg, $lightgrey 0%, rgba(255, 255, 255, 0) 100%), $lemon;
  @media only screen and (max-width: 850px){
 		grid-template-rows: 30px 20px 1fr 20px;
+		min-height: -webkit-fill-available;
+	  height: 100%;
 	}
 }
 
