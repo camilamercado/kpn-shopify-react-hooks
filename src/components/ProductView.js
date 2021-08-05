@@ -25,8 +25,7 @@ export default (props) => {
 	return (
 		<div id="individualProduct">
 			<div className="Product__info">
-			<h2 className="Product__title">{product.title}</h2>
-
+				<h2 className="Product__title">{product.title}</h2>
 				<button
 					className="prodBuy button"
 					onClick={(e) => addItemsToTray(product)}

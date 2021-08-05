@@ -51,8 +51,9 @@ h2 {
 button {
 	cursor: pointer;
 	// font-family: cursive;
-	@include cursive;
-	text-transform: none;
+	// @include cursive;
+	@include mono;
+	text-transform: uppercase;
 }
 
 /* BASE APP

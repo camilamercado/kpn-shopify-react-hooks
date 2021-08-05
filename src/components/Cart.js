@@ -63,7 +63,7 @@ export default (props) => {
 					</button>
 				</div>
 				<header className="Cart__header">
-					<h2>~*CART*~</h2>
+					<h1>~*CART*~</h1>
 					<button className="Cart__close" onClick={(e) => handleClose(e)}>
 						<MdRemoveShoppingCart />
 					</button>

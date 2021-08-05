@@ -61,7 +61,7 @@ export default (props) => {
 						})}
 				</figure>
 				<div className="instructions">
-					<h2>Commission<br></br>a Custom Piece</h2>
+					{/* <h2>Commission<br></br>a Custom Piece</h2> */}
 					<p>Add up to three objects to the tray</p><p>✸</p>
 					<p>Write a note for reference</p>
 					<p>✸</p>

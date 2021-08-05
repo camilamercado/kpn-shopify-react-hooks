@@ -8,7 +8,7 @@ export default (props) => {
 		<div className="Loop">
 			<div className="Object__Image">
 				<figure></figure>
-				<div className="instrecutions">
+				<div className="instrucutions">
 				*Select up to three objects*
 				*Upload any image* 
 				(for reference / inclusion)

@@ -58,7 +58,7 @@ export default (props) => {
 					className="state-1"
 					onClick={(e) => setTrayState(0)}
 				>➜</button>
-					<h2>TRAY</h2>
+					<h1>TRAY</h1>
 				</header>
 				<ul className="Tray__line-items">
 				{trayItems && trayItems.map((lineItem, i) => {

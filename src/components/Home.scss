@@ -45,7 +45,9 @@ header.App__header:not(#Home)  {
       color: cornflowerblue;
       text-shadow: 1px 0px 14px cornflowerblue;
       color: blueviolet;
+      color: white;
       text-shadow: 1px 0px 14px blueviolet;
+      text-shadow: 1px 0px 14px white;
     }
   }
   @media only screen and (max-width: 850px){
@@ -88,8 +90,10 @@ header.App__header:not(#Home) {
           color: $grey2;
           text-shadow: 1px 0px 14px $grey1;
           &.active {
-            color: blueviolet;
-            text-shadow: 1px 0px 14px blueviolet;
+            // color: blueviolet;
+            color: white;
+            // text-shadow: 1px 0px 14px blueviolet;
+            text-shadow: 1px 0px 14px white;
           }
         }
       }
@@ -150,9 +154,9 @@ header.App__header#Home {
       justify-self: center;
       font-size: 26px;
       color: rgba(255, 17, 0, 0.44);
-      border: 1px solid rgba(255, 17, 0, 0.44);
+      // border: 1px solid rgba(255, 17, 0, 0.44);
       color: $grey2;
-      border: 1px solid $grey2;
+      // border: 1px solid $grey2;
       border-radius: 50%;
       padding: 10px;
       // font-family: 'Andale Mono', Courier, monospace;
@@ -161,6 +165,7 @@ header.App__header#Home {
     div {
       background: radial-gradient(rgba(0, 195, 255, 0.577) 20%, rgba(255, 176, 176, 0.386) 80%);
       border: 1px solid #ffffff;
+      // border: 30px double black
     }
     &:hover {
       background: radial-gradient(#fff700 20%, transparent 80%);
@@ -186,7 +191,8 @@ header.App__header#Home {
       text-align: center;
       text-transform: capitalize;
       font-size: 11vw;
-      line-height: 8.5vw;
+      line-height: 9vw;
+      letter-spacing: 5px;
       border: 0px;
       align-self: center;
       margin-top: -8%;

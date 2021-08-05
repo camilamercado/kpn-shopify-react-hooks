@@ -1,15 +1,19 @@
 @import '../globals.scss';
 
-h2, button {
+// h2, button {
+//   text-shadow: 1px 0px 14px $grey1;
+// }
+h2 {
   text-shadow: 1px 0px 14px $grey1;
+  // text-shadow: 1px 0px 14px pink;
 }
 
 .custom-products-page {
   grid-column: 2 / span 10;
-	grid-row: 3 / span 2; 
+	grid-row: 2 / span 3; 
 	display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: auto calc(100vh - 50px);
+  grid-template-rows: auto calc(100vh - 30px);
   overflow: scroll;
   @media only screen and (max-width: 850px){
     grid-row: 3 / span 2; 
@@ -21,6 +25,7 @@ h2, button {
     grid-row: 1 / span 1; 
     // border: 1px solid $tomato;
     border-radius: 20%;
+    margin-top: 20px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -31,12 +36,12 @@ h2, button {
       padding: 20px 0 0 0;
     }
     h2 {
-      font-size: 70px;
-      font-size: 85px;
-      line-height: 75px;
-      width: 100%;
+      font-size: 105px;
+      line-height: 85px;
+      width: 80%;
       margin: 20px;
       margin-bottom: 40px;
+      text-transform: uppercase;
       @media only screen and (max-width: 850px){
         font-size: 17vw;
         line-height: 15vw;
@@ -188,13 +193,16 @@ h2, button {
       }
       button {
         background: transparent;
-        border: 1px solid $tomato;
+        border: 0px;
+        // font-style: italic;
         border-radius: 10px;
         padding: 8px 10px;
+        padding: 0px;
+        margin-bottom: 1em;
         font-size: 18px;
         vertical-align: super;
         &:hover {
-          background: $seafoam;
+          color: blue;
         }
         @media only screen and (max-width: 850px){
           padding: 5px 8px;
@@ -204,12 +212,11 @@ h2, button {
       h2 {
         text-shadow: none;
         opacity: 1;
-        font-weight: bold;
-        display: inline-block;
-        margin: 10px 20px 10px 0;
-        font-size: 30px;
-        // font-family: 'Andale Mono';
-        @include mono;
+        font-size: 4em;
+        line-height: 1em;
+        margin: 0 0 5px 0;
+        @include cursive;
+        text-transform: uppercase;
         @media only screen and (max-width: 850px){
           font-size: 15px;
           line-height: 18px;
@@ -374,6 +381,7 @@ h2, button {
         background: transparent;
         border: 1px solid $grey2;
         border-radius: 10px;
+        font-size: 18px;
       }
       .Product__description {
         font-size: 18px;
