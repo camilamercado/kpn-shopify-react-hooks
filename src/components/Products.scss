@@ -3,8 +3,18 @@
 // h2, button {
 //   text-shadow: 1px 0px 14px $grey1;
 // }
+
+@keyframes text-shadow {
+  from {  text-shadow: 1px 0px 14px $grey1;  }
+  to {  text-shadow: 1px 0px 14px rgb(117, 139, 238);  }
+}
+
 h2 {
-  text-shadow: 1px 0px 14px $grey1;
+  // text-shadow: 1px 0px 14px $grey1;
+  animation-name: text-shadow;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
   // text-shadow: 1px 0px 14px pink;
 }
 

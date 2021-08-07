@@ -164,7 +164,7 @@ header.App__header#Home {
     }
     div {
       background: radial-gradient(rgba(0, 195, 255, 0.577) 20%, rgba(255, 176, 176, 0.386) 80%);
-      border: 1px solid #ffffff;
+      border: 1px solid $grey;
       // border: 30px double black
     }
     &:hover {
@@ -185,6 +185,8 @@ header.App__header#Home {
     font-size: 30px;
     border: 1px solid $seafoam;
     position: relative;
+    background: radial-gradient(#ff9029 30%, transparent 70%);
+
     h2 {
       // font-family: cursive;
       @include cursive;
