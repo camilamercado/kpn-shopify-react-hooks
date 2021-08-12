@@ -31,6 +31,7 @@ export default (props) => {
 		<div className="Product-wrapper">
 			{featured.products &&
 				featured.products.map((product, i) => {
+					if (product.availableForSale) {
 					const image = product.images[0]
 					return (
 						<div className="Product" key={product.id + i} onClick={(e) => handleClick(e, product.id)}>
@@ -52,6 +53,7 @@ export default (props) => {
 								</div>
 						</div>
 					)
+				}
 				})}
 		</div>
 	)

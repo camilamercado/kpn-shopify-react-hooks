@@ -20,7 +20,7 @@
     text-align: center;
   }
   @media only screen and (max-width: 850px){
-    display: none;
+    display: none!important;
   } 
 }
 .Object__Text {

@@ -199,7 +199,7 @@ function getCollection(type, id) {
 		} if (type === 'contact'){
 			dispatch({ type: CONTACT_REQUESTED })
 		}
-		client.collection.fetchWithProducts(collectionId, {productsFirst: 75}).then((resp) => {
+		client.collection.fetchWithProducts(collectionId).then((resp) => {
 			if (type === 'collection'){
 				dispatch({
 					type: COLLECTION_FOUND,

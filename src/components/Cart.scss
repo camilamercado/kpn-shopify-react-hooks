@@ -45,10 +45,10 @@
       top: unset;
       height: 100px;
       width: 100%;
-      background: pink;
-      background: $seafoam;
-      background: rgb(197, 222, 201);
-      background: lavender;
+      background: $lemon;
+      // background: $seafoam;
+      // background: rgb(197, 222, 201);
+      // background: lavender;
       left: 0px;
       z-index: 10;
       padding: 10px;
@@ -59,7 +59,7 @@
           height: 78px;
           font-size: 40px;
           padding: 0px;
-          border: 1px solid white;
+          border: 1px solid black;
           background: transparent;
           border-radius: 50%;
         }
@@ -70,13 +70,13 @@
           .Cart__header {
             display: inline-block;
             text-align: center;
-            h2 {
+            h1, h2 {
               font-size: 20px;
               width: 18px;
               word-break: break-all;
               line-height: 20px;
               margin-right: 10px;
-              font-family: 'Andale Mono';
+              // font-family: 'Andale Mono';
             }
           }
           button.state-0 {
@@ -88,7 +88,7 @@
           .Tray__line-items {
             display: flex;
             margin: 0;
-            border: 1px solid #ffffff;
+            border: 1px solid black;
             border-radius: 50px;
             justify-content: space-evenly;
             width: 50vw;
@@ -122,7 +122,7 @@
             height: 60px;
             font-size: 30px;
           }
-          h2 {
+          h1, h2 {
             font-size: 35px;
             letter-spacing: 3px;
             flex-grow: 1;
@@ -415,7 +415,7 @@
 	float: left;
 	height: 21px;
 	line-height: 16px;
-	font-family: monospace;
+	// font-family: monospace;
 	width: 25px;
 	padding: 0;
 	border: none;

@@ -50,6 +50,7 @@ export default (props) => {
 		<div className="Products-wrapper collection">
 			{featured.products &&
 				featured.products.map((product, i) => {
+					if (product.availableForSale) {
 					return (
 						<div className="Product poster" key={product.id + i}>
 							{product.images &&
@@ -78,7 +79,7 @@ export default (props) => {
 								</div>
 							</div>
 						</div>
-					)
+					)}
 				})}
 		</div>
 	)

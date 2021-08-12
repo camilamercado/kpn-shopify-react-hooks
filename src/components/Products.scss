@@ -53,8 +53,10 @@ h2 {
       margin-bottom: 40px;
       text-transform: uppercase;
       @media only screen and (max-width: 850px){
-        font-size: 17vw;
-        line-height: 15vw;
+        font-size: 12vw;
+        line-height: 12vw;
+        margin: 0;
+        width: 100%;
         margin-bottom: 40px;
       }
     }
@@ -169,6 +171,9 @@ h2 {
         position: absolute;
         right: -1px;
         top: 0;
+        @media only screen and (max-width: 850px){
+          display: none;
+        }
       }
     }
   }
@@ -355,6 +360,12 @@ h2 {
           height: 100%;
           object-fit: cover;
           border-radius: 40px;
+          @media only screen and (max-width: 850px){
+            border-radius: 0px;
+          }
+        }
+        @media only screen and (max-width: 850px){
+          padding: 0px!important;
         }
       }
       &:nth-of-type(2){
