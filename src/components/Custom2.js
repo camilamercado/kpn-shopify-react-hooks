@@ -37,11 +37,11 @@ export default (props) => {
 				<h2>Commission a Custom Piece</h2>
 				<p>Add up to three objects from my collection to the tray</p>
 				<p>✸</p>
-				<p>Once you have selected your peices, write me a note describing your personal style, budget and what type of piece you want– earings, necklace, harness, or something entirely custom</p>
+				<p>Once you have selected your pieces, write me a note describing your personal style, budget and what type of piece you want– earings, necklace, harness, or something entirely custom</p>
 				<p>✸</p>
-				<p>Click "Commission" to add your peices and note to the cart, you can continue to checkout, or continue exploring</p>
+				<p>Click "Commission" to add your pieces and note to the cart, you can continue to checkout, or continue exploring</p>
 				<p>✸</p>
-				<p>Once I recieve the commision I will reach out to your provided email within a few days to discuss timeline, details and cost</p>
+				<p>Once I receive the commision I will reach out to your provided email within a few days to discuss timeline, details and cost</p>
 				<p>⇊</p>
 			</div>
 		<Tray />
