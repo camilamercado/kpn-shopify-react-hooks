@@ -1,4 +1,11 @@
-# reactHooks-redux-js-buy-sdk
+# Kiwi Phong Nguyen Jewelry Shopify / React Webstore
+
+[Visit Site](https://kiwi-nguyen.herokuapp.com/)
+
+The project was forked from the [reactHooks-redux-js-buy](https://github.com/Shopify/storefront-api-examples/tree/master/reactHooks-redux-js-buy) repository produced by Shopify.
+
+---
+## INSTRUCTIONS
 
 An example using [js-buy-sdk](https://github.com/Shopify/js-buy-sdk) built with [React](https://facebook.github.io/react/) and [Redux](https://github.com/reduxjs/redux). This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
