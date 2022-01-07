@@ -12,10 +12,7 @@ export default (props) => {
 	} = useUX()
 
 	const id = props.id
-	// const skimVariant = product.variants
-	// console.log(skimVariant)
-	// // const qty = skimVariant.unitPriceMeasurement.quantityValue
-
+	
 	function addItemsToTray(product){
 		console.log('adding to tray', product)
 		addToTray(product)

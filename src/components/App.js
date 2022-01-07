@@ -1,7 +1,7 @@
 import React, { useEffect } from "react"
 import { BrowserRouter as Router, Route, Redirect } from "react-router-dom"
 // import CustomProducts from "./CustomProducts"
-import CustomProducts from "./Custom2"
+import CustomProducts from "./Custom"
 import CollectionProducts from "./CollectionProducts"
 import Cart from "./Cart"
 import Contact from "./Contact"
