@@ -21,11 +21,8 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	// font-family: 'Andale Mono', Courier, monospace;
-	// font-family: Helvetica, sans-serif;
 	@include mono;
 	font-weight: 400;
- 	// background: linear-gradient(180deg, #e9e2f2 0%, rgba(255, 255, 255, 0) 100%), $lemon;
 }
 
 img {
@@ -101,15 +98,6 @@ button {
 	color: grey;
 	display: none;
 }
-
-// .button {
-// 	background-color: #2752ff;
-// 	color: white;
-// 	border: none;
-// 	font-size: 1.2rem;
-// 	padding: 10px 17px;
-// 	cursor: pointer;
-// }
 
 .button:hover,
 .button:focus {

@@ -37,9 +37,7 @@ $grey: black;
 
 $lemon: #F5FF7F;
 $seafoam: #98a885;
-
 $seafoam: #c6fac800;
-
 
 $desktop-columns-10: repeat(10, 1fr);
 
@@ -66,17 +64,10 @@ $desktop-columns-10: repeat(10, 1fr);
 
 
 @mixin cursive {
-  font-family: 'Apple Chancery', Apple Chancery, cursive;
   font-family: 'Viaoda Libre', cursive;
   font-weight: normal;
   text-transform: initial;
-  // font-family: 'Roslindale Display Narrow', cursive;
-  // font-family: 'Roslindale Display Condensed Extra Light', cursive;
-  // font-weight: 200;
   font-weight: 300;
-  // letter-spacing: 10px;
-  // text-transform: uppercase!important;
-  // font-style: italic;
 }
 
 @mixin viaoda {
@@ -84,24 +75,8 @@ $desktop-columns-10: repeat(10, 1fr);
 }
 
 @mixin mono {
-  font-family: 'Andale Mono', Andale Mono, Courier New, monospace;
-  text-transform: uppercase;
-  // font-size: 0px;
-  // font-family: 'Lucida Console', Lucida Console, Courier New, monospace;
-  //font-family: 'Viaoda Libre', cursive;
-}
-
-@mixin mono {
   font-family: ocr-b-std, monospace;
-  // font-weight: 400;
   font-style: normal;
   text-transform: uppercase;
   letter-spacing: unset;
 }
-
-// @mixin mono {
-//   font-family: ocr-b-std, monospace;
-//   // font-weight: 400;
-//   font-style: normal;
-//   text-transform: uppercase;
-// }

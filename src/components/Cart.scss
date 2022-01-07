@@ -14,11 +14,6 @@
       position: absolute;
       top: 50px;
       left: 0px;
-      // background: #e2e2e2;
-      // background: #c4e4d8;
-      // list-style-type: none;
-      // padding-left: 20px;
-      // padding-top: 20px;
       z-index: 20;
     }
   }	
@@ -46,9 +41,6 @@
       height: 100px;
       width: 100%;
       background: $lemon;
-      // background: $seafoam;
-      // background: rgb(197, 222, 201);
-      // background: lavender;
       left: 0px;
       z-index: 10;
       padding: 10px;
@@ -76,7 +68,6 @@
               word-break: break-all;
               line-height: 20px;
               margin-right: 10px;
-              // font-family: 'Andale Mono';
             }
           }
           button.state-0 {
@@ -415,7 +406,6 @@
 	float: left;
 	height: 21px;
 	line-height: 16px;
-	// font-family: monospace;
 	width: 25px;
 	padding: 0;
 	border: none;
