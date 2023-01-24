@@ -9,20 +9,19 @@ import Archive from "./Archive"
 import { useShopify } from "../hooks"
 
 export default (props) => {
+	// Declare Redux actions
 	const {
 		createShop,
 		createCheckout,
 		fetchProducts,
 	} = useShopify()
 
+  // Call Redux actions to initiate store and fetch products
 	useEffect(() => {
 		createShop()
 		fetchProducts()
 		createCheckout()
 	}, [])
-
-	// let path = props
-	// console.log(path)
 
 	return (
 		<Router>
